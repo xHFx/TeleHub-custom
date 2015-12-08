@@ -1,5 +1,5 @@
 name: TeleHub-custom
-main: LDX\TeleHub-custom\Main
+main: LDX\TeleHub_custom\Main
 version: 1.0a
 api: [1.0.0, 2.0.0]
 author: LDX
