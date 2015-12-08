@@ -1,18 +1,10 @@
-name: TeleHub-custom
+name: DarkRealms-Warps
 main: LDX\TeleHub_custom\Main
 version: 1.0a
 api: [1.0.0, 2.0.0]
 author: LDX
 load: POSTWORLD
 commands:
-  hub:
-    usage: "/hub"
-    description: "Teleports you to the server hub."
-    permission: thc.command.hub
-  spawn:
-    usage: "/spawn"
-    description: "Teleports you to the server spawn."
-    permission: thc.command.spawn
   shop:
     usage: "/shop"
     description: "Teleports you to the server shop."
