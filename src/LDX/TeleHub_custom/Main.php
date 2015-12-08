@@ -16,17 +16,11 @@ class Main extends PluginBase {
       return true;
     }
     switch(strtolower($command->getName())) {
-      case "hub":
-        $sender->teleport(new Location(460, 79.000003, -1624, 179, -1, $this->getServer()->getLevelByName("Hub by JuampiRshaid")));
-        break;
-      case "spawn":
-        $sender->teleport(new Location(-250.594864, 6, 339.2341, 179, -1, $this->getServer()->getLevelByName("Gorzen")));
-        break;
       case "shop":
         $sender->teleport(new Location(-280.279358, 66.000003, 368.750275, 179, -1, $this->getServer()->getLevelByName("Gorzen")));
         break;
       case "pvp":
-        $sender->teleport(new Location(1701.638306, 12.663271, -1027.24585, 179, -1, $this->getServer()->getLevelByName("PvP Arena")));
+        $sender->teleport(new Location(1701.638306, 12.663271, -1027.24585, 179, -1, $this->getServer()->getLevelByName("PvP")));
         break;
       default:
         $sender->sendMessage("Invalid command.");
