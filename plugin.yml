@@ -1,0 +1,44 @@
+name: TeleHub-custom
+main: LDX\TeleHub-custom\Main
+version: 1.0a
+api: [1.0.0, 2.0.0]
+author: LDX
+load: POSTWORLD
+commands:
+  hub:
+    usage: "/hub"
+    description: "Teleports you to the server hub."
+    permission: thc.command.hub
+  spawn:
+    usage: "/spawn"
+    description: "Teleports you to the server spawn."
+    permission: thc.command.spawn
+  shop:
+    usage: "/shop"
+    description: "Teleports you to the server shop."
+    permission: thc.command.shop
+  pvp:
+    usage: "/pvp"
+    description: "Teleports you to pvp."
+    permission: thc.command.pvp
+permissions:
+  thc:
+    default: false
+    description: "Allows access to all TeleHub-custom features."
+    children:
+      thc.command:
+        default: false
+        description: "Allows access to all TeleHub-custom commands."
+        children:
+          thc.command.hub:
+            default: true
+            description: "Allows access to the hub command."
+          thc.command.spawn:
+            default: true
+            description: "Allows access to the spawn command."
+          thc.command.shop:
+            default: true
+            description: "Allows access to the shop command."
+          thc.command.pvp:
+            default: true
+            description: "Allows access to the pvp command."
